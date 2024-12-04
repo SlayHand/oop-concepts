@@ -8,15 +8,15 @@ class Student{
         this.#status = 'Active'
     } 
     getId(){
-        
+        return this.#id
     } 
     getName(){
         return this.#name
     } 
-    setName(){
+    setName(name){
         this.#name = name
     } 
-    setStatus(){
+    setStatus(status){
         const statuses = ['Active', 'Expelled', 'Finished', 'Inactive']
         if(statuses.includes(status)){
             this.#status = status
